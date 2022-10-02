@@ -18,10 +18,10 @@ def findvalue(list, value, correctionValue):
         if list[mid] == value and list[mid+correctionValue] != value:
             return mid
         
-        elif list[mid] > value:
+        elif list[mid] >= value:
             right = mid-1
         
-        elif list[mid] < value:
+        elif list[mid] <= value:
             left = mid+1
     return -1
 
